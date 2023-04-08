@@ -5,4 +5,8 @@ Rails.application.routes.draw do
   # root "articles#index"
   root 'pages#home'
   get 'home', to: 'pages#home'
+  get 'show', to: 'pages#show'
+  
+  resources :setups, only: [:show]
+
 end

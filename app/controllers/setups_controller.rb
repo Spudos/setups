@@ -4,4 +4,8 @@ class SetupsController < ApplicationController
       @setup = Setup.find(params[:id])
     end
 
+    def index
+      @setups = Setup.all
+    end
+
 end

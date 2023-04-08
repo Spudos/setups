@@ -1,0 +1,22 @@
+<h1>Setup listing page</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Car</th>
+            <th>Driver</th>
+            <th>track</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <% @setups.each do |setup| %>
+            <tr>
+                <td><%= setup.car %></td>
+                <td><%= setup.driver %></td>
+                <td><%= setup.track %></td>
+                <td>Placeholder</td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>

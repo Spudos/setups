@@ -6,6 +6,6 @@ Rails.application.routes.draw do
   root 'pages#home'
   get 'home', to: 'pages#home'
 
-  resources :setups, only: [:show, :index]
+  resources :setups, only: [:show, :index, :new, :create]
 
 end

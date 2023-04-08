@@ -1,0 +1,23 @@
+<h1>Add a setup</h1>
+
+<%= form_with scope: :setup, url: setups_path, local: true do |f| %>
+<p>
+    <%= f.label :car%><br/>
+    <%= f.text_field :car %>
+</p>
+
+<p>
+    <%= f.label :driver%><br/>
+    <%= f.text_field :driver %>
+</p>
+
+<p>
+    <%= f.label :track %><br/>
+    <%= f.text_area :track %>
+</p>
+
+<p>
+<%= f.submit %>
+</p>
+
+<% end %>

@@ -3,4 +3,6 @@
 <p>Car: <%= @setup.car %></P>
 <p>Driver: <%= @setup.driver %></P>
 <p>Track: <%= @setup.track %></P>
+<%= link_to 'Edit', edit_setup_path(@setup)%>
+<%= link_to 'Delete', setup_path(@setup), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
 <p><%= link_to 'Return to setup listing', setups_path %></p>

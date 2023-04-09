@@ -25,7 +25,7 @@
                 <td><%= setup.track %></td>
                 <td><%= link_to 'Show', setup_path(setup)%></td>
                 <td><%= link_to 'Edit', edit_setup_path(setup)%></td>
-                <td><%= link_to 'Delete', setup_path(setup), data: {turbo_method: :delete} %></td>
+                <td><%= link_to 'Delete', setup_path(setup), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %></td>
             </tr>
         <% end %>
 

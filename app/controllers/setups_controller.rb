@@ -39,7 +39,7 @@ class SetupsController < ApplicationController
     def destroy
       @setup = Setup.find(params[:id])
       @setup.destroy
-      redirect_to setup_path
+      redirect_to setups_path
     end
 
 end

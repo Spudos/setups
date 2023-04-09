@@ -233,3 +233,9 @@ margin: 0;
 padding: 20px 0;
 color: #00539f;
 }
+
+<style type="text/css">
+  td {
+    padding: 0 15px;
+  }
+</style>

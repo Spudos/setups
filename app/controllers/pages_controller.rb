@@ -2,7 +2,7 @@ class PagesController < ApplicationController
     def home
     end
 
-    def index
+    def setups
     end
 
     end
